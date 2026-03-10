@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Countries</title>
+</head>
+
+<body>
+
+<h1>List of Countries</h1>
+
+<ul>
+    <li th:each="country : ${countries}" th:text="${country}"></li>
+</ul>
+
+</body>
+
+</html>
